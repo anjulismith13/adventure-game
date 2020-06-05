@@ -17,7 +17,7 @@ Upon inputting the desired JSON file, players are taken to the entry room indica
 Players can pick up items and add them to their inventory. The player enters "take" and the name of the object in the room they'd like to pick up. The object is then added to the player's inventory, which a player can confirm by running the command "inventory". <br/>
 ![](img/taking-items.png)
 
-Rooms are accessed using the command "go" and an exit name. Each room can have multiple exit names that lead to it. For example, "back" was a strategically included exit name in this adventure, so that players could use the command "go back" to retreat closer to the entry room from wherever they were. <br/>
+Rooms are accessed using the command "go" and an exit name. Each room can have multiple exit names that lead to it. For example, "back" was a strategically included exit name in this adventure, so that players could use the command "go back" to retreat towards the entry room. <br/>
 
 Players can also "drop" items from their inventory into the current room. <br/>
 ![](img/inventory-items.png)
