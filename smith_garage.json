@@ -1,0 +1,167 @@
+{
+  "rooms": [
+    {
+      "id": "garage",
+      "points": 1,
+      "description": "Welcome home! You've pulled the car into the garage. Why don't you hop out of the car and come into the inner garage?",
+      "exits": [
+        {
+          "name": "back",
+          "room id": "the outside world"
+        },
+        {
+          "name": "road",
+          "room id": "the outside world"
+        },
+        {
+          "name": "drive away",
+          "room id": "the outside world"
+        },
+        {
+          "name": "inside",
+          "room id": "inner garage"
+        },
+        {
+          "name": "enter",
+          "room id": "inner garage"
+        },
+        {
+          "name": "inner garage",
+          "room id": "inner garage"
+        }
+      ]
+    },
+    {
+      "id": "the outside world",
+      "points": -1000,
+      "description": "You've left home and forsaken your family. You can never return. Game over.",
+      "exits": []
+    },
+    {
+      "id": "inner garage",
+      "points": 2,
+      "description": "You enter into the warmth of the inner garage and take off your shoes and coat. The cold draft from the garage behind you lingers. You hear voices and the TV from the family room ahead of you and you wonder who's home.",
+      "exits": [
+        {
+          "name": "garage",
+          "room id": "garage"
+        },
+        {
+          "name": "back",
+          "room id": "garage"
+        },
+        {
+          "name": "family room",
+          "room id": "family room"
+        },
+        {
+          "name": "forward",
+          "room id": "family room"
+        }
+      ]
+    },
+    {
+      "id": "family room",
+      "points": 2,
+      "description": "You're now in the family room. There's a game playing on the TV and Papa is watching with a glass of wine. The inner garage is behind you, but you smell something cooking in the kitchen upstairs. You also notice the basement light is on to your right.",
+      "exits": [
+        {
+          "name": "inner garage",
+          "room id": "inner garage"
+        },
+        {
+          "name": "back",
+          "room id": "inner garage"
+        },
+        {
+          "name": "upstairs",
+          "room id": "kitchen"
+        },
+        {
+          "name": "kitchen",
+          "room id": "kitchen"
+        },
+        {
+          "name": "right",
+          "room id": "basement"
+        },
+        {
+          "name": "downstairs",
+          "room id": "basement"
+        },
+        {
+          "name": "basement",
+          "room id": "basement"
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "points": 3,
+      "description": "The kitchen is warm and dinner is almost ready on the stove. Amma is happy to see you. You're home :)",
+      "exits": [
+        {
+          "name": "downstairs",
+          "room id": "family room"
+        },
+        {
+          "name": "back",
+          "room id": "family room"
+        },
+        {
+          "name": "family room",
+          "room id": "family room"
+        }
+      ]
+    },
+    {
+      "id": "basement",
+      "points": 3,
+      "description": "Man, the basement is cold and dank. You hope you don't walk into a low-hanging spiderweb. What did you need down here again?",
+      "exits": [
+        {
+          "name": "family room",
+          "room id": "family room"
+        },
+        {
+          "name": "upstairs",
+          "room id": "family room"
+        },
+        {
+          "name": "back",
+          "room id": "family room"
+        },
+        {
+          "name": "safety",
+          "room id": "family room"
+        },
+        {
+          "name": "run",
+          "room id": "family room"
+        }
+      ]
+    }
+  ],
+  "start room": "garage",
+  "max points": 41,
+  "items": [
+    {
+      "id": "shoes",
+      "start room": "garage",
+      "points": 10,
+      "target room": "inner garage"
+    },
+    {
+      "id": "recycling",
+      "start room": "kitchen",
+      "points": 10,
+      "target room": "inner garage"
+    },
+    {
+      "id": "suitcase",
+      "start room": "family room",
+      "points": 10,
+      "target room": "basement"
+    }
+  ]
+}
