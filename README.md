@@ -6,9 +6,7 @@ A data-driven text adventure game written in OCaml for Cornell's functional prog
 https://www.cs.cornell.edu/courses/cs3110/2020sp/a2/ <br/>
 https://www.cs.cornell.edu/courses/cs3110/2020sp/a3/
 
-The game can "play" any JSON adventure file with the appropriate format. A sample JSON file has been included here. <br/>
-
-[Sample Adventure](smith_garage.json)
+The game can "play" any JSON adventure file with the appropriate format. A sample JSON file has been included ![here](smith_garage.json).
 
 Running "make play" within the project file starts the game engine and players are prompted to input the name of their desired adventure file. <br/>
 ![](img/welcome-screen.png)
