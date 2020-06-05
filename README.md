@@ -3,10 +3,11 @@
 *Source code is available upon request, but could not be included here as Cornell's Department of Computer Science owns the starter code.*
 
 A data-driven text adventure game written in OCaml for Cornell's functional programming course (CS 3110). This project was made to fit certain design specifications outlined in the assignment prompts linked below: <br/>
--https://www.cs.cornell.edu/courses/cs3110/2020sp/a2/ <br/>
--https://www.cs.cornell.edu/courses/cs3110/2020sp/a3/
+https://www.cs.cornell.edu/courses/cs3110/2020sp/a2/ <br/>
+https://www.cs.cornell.edu/courses/cs3110/2020sp/a3/
 
 The game can "play" any JSON adventure file with the appropriate format. A sample JSON file has been included here. <br/>
+
 [Sample Adventure](smith_garage.json)
 
 Running "make play" within the project file starts the game engine and players are prompted to input the name of their desired adventure file. <br/>
@@ -23,7 +24,7 @@ Players can also "drop" items from their inventory into the current room. <br/>
 
 Rooms are accessed using the command "go" and an exit name. Each room can have multiple exit names that lead to it. For example, "back" was a strategically included exit name in this adventure, so that players could use the command "go back" to retreat closer to the entry room from wherever they were. 
 
-Players earn points by exploring the rooms in the game and by dropping items in the correct room. Dropping an item in the correct room earns a player 10 points, while exploring new rooms earns a variable number of points, depending on the room. Players can check their current score with the command "score". 
+Players earn points by exploring the rooms in the game and by dropping items in the correct room. Dropping an item in the correct room earns a player 10 points, while exploring new rooms earns a variable number of points, depending on the room. Players can check their current score with the command "score". <br/>
 In the example below, the player earned 3 points for entering a new room ("dining room") and then 10 points for dropping the newspapers in the correct room (which is the dining room for this item). <br/>
 ![](img/scoring.png)
 
