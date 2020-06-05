@@ -17,10 +17,10 @@ Upon inputting the desired JSON file, players are taken to the entry room indica
 Players can pick up items and add them to their inventory. The player enters "take" and the name of the object in the room they'd like to pick up. The object is then added to the player's inventory, which a player can confirm by running the command "inventory". <br/>
 ![](img/taking-items.png)
 
+Rooms are accessed using the command "go" and an exit name. Each room can have multiple exit names that lead to it. For example, "back" was a strategically included exit name in this adventure, so that players could use the command "go back" to retreat closer to the entry room from wherever they were. <br/>
+
 Players can also "drop" items from their inventory into the current room. <br/>
 ![](img/inventory-items.png)
-
-Rooms are accessed using the command "go" and an exit name. Each room can have multiple exit names that lead to it. For example, "back" was a strategically included exit name in this adventure, so that players could use the command "go back" to retreat closer to the entry room from wherever they were. 
 
 Players earn points by exploring the rooms in the game and by dropping items in the correct room. Dropping an item in the correct room earns a player 10 points, while exploring new rooms earns a variable number of points, depending on the room. Players can check their current score with the command "score". <br/>
 In the example below, the player earned 3 points for entering a new room ("dining room") and then 10 points for dropping the newspapers in the correct room (which is the dining room for this item). <br/>
